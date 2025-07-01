@@ -1,0 +1,60 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PixelArcade - Flashback Gaming</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&family=Press+Start+2P&display=swap" rel="stylesheet">
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: {
+              'press-start': ['"Press Start 2P"', 'cursive'],
+              'nunito': ['"Nunito"', 'sans-serif'],
+            },
+            colors: {
+              'brand-charcoal': '#1A1A1A',
+              'brand-accent': '#EC4899', // magenta
+              'brand-light': '#374151',
+            }
+          },
+        },
+      }
+    </script>
+    <style>
+      body {
+        background-color: #1A1A1A;
+        font-family: 'Nunito', sans-serif;
+      }
+      .font-press-start {
+        font-family: 'Press Start 2P', cursive;
+      }
+      .font-nunito {
+        font-family: 'Nunito', sans-serif;
+      }
+    </style>
+  <script type="importmap">
+{
+  "imports": {
+    "react": "https://esm.sh/react@^19.1.0",
+    "react-dom/": "https://esm.sh/react-dom@^19.1.0/",
+    "react/": "https://esm.sh/react@^19.1.0/",
+    "react-router-dom": "https://esm.sh/react-router-dom@^7.6.3"
+  }
+}
+</script>
+<link rel="stylesheet" href="/index.css">
+</head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/index.tsx"></script>
+    <!-- Ruffle.rs emulator script -->
+    <script src="https://unpkg.com/@ruffle-rs/ruffle"></script>
+  </body>
+</html>
